@@ -33,7 +33,7 @@ public class PaisesController {
 		paisService.crearPais(pais);
 	}
 	
-	@GetMapping("/paises/{id}")
+	@GetMapping("/paises/{ID}")
 	public PaisDTO findById(@PathVariable String ID) {
 		return paisService.findById(ID);
 		
